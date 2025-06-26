@@ -1,52 +1,73 @@
-# Portfolio Website
+# Portfolio Travian - Septaro Travian Gadha
 
-Website portfolio profesional dengan desain modern, responsive, dan fitur PWA (Progressive Web App).
+Website portfolio profesional dengan fokus pada jaringan komputer, pengembangan web, dan teknologi modern. Dibuat dengan desain responsive dan fitur PWA (Progressive Web App).
+
+## 👨‍💻 Tentang
+
+Portfolio ini menampilkan karya dan pengalaman **Septaro Travian Gadha**, seorang mahasiswa yang berfokus pada jaringan komputer dengan pengalaman dalam berbagai teknologi jaringan dan pengembangan web.
 
 ## 🚀 Fitur
 
-- **Responsive Design** - Optimal di semua perangkat
-- **Modern UI/UX** - Desain clean dan profesional
-- **PWA Support** - Dapat diinstall sebagai aplikasi
+- **Responsive Design** - Optimal di semua perangkat (desktop, tablet, mobile)
+- **Modern UI/UX** - Desain clean dan profesional dengan animasi smooth
+- **PWA Support** - Dapat diinstall sebagai aplikasi di mobile/desktop
 - **Offline Support** - Tetap berfungsi tanpa internet
-- **Fast Loading** - Optimasi performa
-- **SEO Friendly** - Meta tags dan struktur yang baik
+- **Fast Loading** - Optimasi performa dan loading cepat
+- **SEO Friendly** - Meta tags dan struktur HTML yang baik
 - **Contact Form** - Form kontak yang fungsional
 - **Smooth Animations** - Animasi yang halus dan menarik
+- **Multi-page** - Halaman utama dan halaman proyek terpisah
 
 ## 🛠️ Teknologi
 
-- **HTML5** - Struktur semantik
-- **CSS3** - Styling modern dengan CSS Grid & Flexbox
-- **JavaScript (ES6+)** - Interaktivitas dan animasi
-- **Service Worker** - Offline functionality
+- **HTML5** - Struktur semantik dan modern
+- **CSS3** - Styling modern dengan CSS Grid, Flexbox, dan Custom Properties
+- **JavaScript (ES6+)** - Interaktivitas, animasi, dan PWA functionality
+- **Service Worker** - Offline functionality dan caching
 - **PWA** - Progressive Web App features
+- **Font Awesome** - Icon library
+- **Google Fonts** - Typography (Inter font family)
 
 ## 📁 Struktur File
 
 ```
-portfolio-website/
+portofolio/
 ├── assets/
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css          # Main stylesheet
 │   ├── js/
-│   │   └── script.js
+│   │   └── script.js          # JavaScript functionality
 │   └── images/
-│       ├── logo.png
-│       ├── profile.jpg
-│       ├── ecommerce.jpg
-│       ├── taskmanagemen.jpg
-│       └── favico.ico
-├── index.html
-├── offline.html
-├── sw.js
-├── manifest.json
-├── package.json
-├── README.md
-├── LICENSE
-├── robots.txt
-├── sitemap.xml
-└── .gitignore
+│       ├── logo.png           # Logo website
+│       ├── profile.jpg        # Foto profil
+│       ├── topologi.png       # Proyek topologi jaringan
+│       ├── projek_admin.png   # Proyek admin dashboard
+│       ├── batik_alam.png     # Proyek website batik
+│       └── favico.ico         # Favicon
+├── index.html                 # Halaman utama
+├── projects.html              # Halaman proyek
+├── sw.js                      # Service Worker
+├── README.md                  # Dokumentasi ini
+├── DEPLOYMENT.md              # Panduan deployment
+└── .gitignore                 # Git ignore rules
 ```
+
+## 🎯 Proyek yang Ditampilkan
+
+### 1. Topologi Jaringan Warnet
+- **Deskripsi**: Topologi jaringan warnet dengan 3 switch dan 1 router
+- **Teknologi**: Winbox, GNS3, Mikrotik, VMware Workstation
+- **Fokus**: Jaringan komputer dan konfigurasi router
+
+### 2. Admin Dashboard
+- **Deskripsi**: Admin Dashboard dengan fitur CRUD dan autentikasi
+- **Teknologi**: HTML5, CSS, JavaScript, PHP
+- **Fokus**: Pengembangan web dan sistem admin
+
+### 3. Batik Alam Website
+- **Deskripsi**: Website batik alam dengan desain modern, responsive, dan optimasi SEO
+- **Teknologi**: HTML5, CSS3, JavaScript, PWA
+- **Fokus**: Web design dan e-commerce
 
 ## 🚀 Cara Menjalankan
 
@@ -59,19 +80,14 @@ python -m http.server 8000
 python -m SimpleHTTPServer 8000
 ```
 
-### Menggunakan Node.js
-```bash
-# Install dependencies (jika ada)
-npm install
-
-# Start development server
-npm start
-```
-
 ### Menggunakan Live Server (VS Code)
 1. Install extension "Live Server"
 2. Right-click pada `index.html`
 3. Pilih "Open with Live Server"
+
+### Menggunakan XAMPP/WAMP
+1. Copy folder ke direktori `htdocs` (XAMPP) atau `www` (WAMP)
+2. Akses melalui `http://localhost/portofolio`
 
 ## 📱 PWA Features
 
@@ -79,18 +95,18 @@ Website ini mendukung fitur PWA:
 
 - **Installable** - Dapat diinstall di mobile/desktop
 - **Offline Support** - Cache resources untuk offline access
-- **Push Notifications** - Support untuk notifikasi (perlu backend)
+- **App-like Experience** - Navigasi dan UI seperti aplikasi native
 - **Background Sync** - Sync data saat online kembali
 
 ## 🎨 Customization
 
 ### Mengubah Informasi Personal
 1. Edit `index.html` - Ganti nama, deskripsi, dan informasi kontak
-2. Edit `manifest.json` - Update nama aplikasi dan metadata
-3. Ganti gambar profil di `profile.jpg`
+2. Ganti gambar profil di `assets/images/profile.jpg`
+3. Update social media links di section hero
 
 ### Mengubah Warna
-Edit CSS variables di `style.css`:
+Edit CSS variables di `assets/css/style.css`:
 ```css
 :root {
     --primary-color: #000000;    /* Warna utama */
@@ -101,20 +117,9 @@ Edit CSS variables di `style.css`:
 ```
 
 ### Menambah Proyek
-Edit section projects di `index.html`:
-```html
-<div class="project-card">
-    <div class="project-image">
-        <img src="your-project-image.jpg" alt="Project Name">
-        <!-- ... -->
-    </div>
-    <div class="project-content">
-        <h3>Project Name</h3>
-        <p>Project description</p>
-        <!-- ... -->
-    </div>
-</div>
-```
+1. Tambahkan gambar proyek di `assets/images/`
+2. Edit section projects di `index.html` dan `projects.html`
+3. Update deskripsi dan teknologi yang digunakan
 
 ## 🔧 Troubleshooting
 
@@ -133,6 +138,18 @@ Edit section projects di `index.html`:
 - Untuk implementasi nyata, perlu backend server
 - Bisa menggunakan services seperti Formspree, Netlify Forms, atau custom backend
 
+## 📊 Statistik Portfolio
+
+- **30+ Proyek Selesai** - Berbagai proyek jaringan dan web development
+- **3+ Tahun Pengalaman** - Pengalaman dalam teknologi jaringan
+- **20+ Klien Puas** - Kepuasan klien dalam berbagai proyek
+
+## 🌐 Social Media
+
+- **GitHub**: [travian22](https://github.com/travian22)
+- **LinkedIn**: [septarotraviangadha](https://www.linkedin.com/in/septarotraviangadha/)
+- **Instagram**: [trvngdh](https://www.instagram.com/trvngdh/)
+
 ## 📄 License
 
 MIT License - lihat file [LICENSE](LICENSE) untuk detail.
@@ -147,10 +164,10 @@ MIT License - lihat file [LICENSE](LICENSE) untuk detail.
 
 ## 📞 Kontak
 
-- Email: hello@example.com
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
+- **Email**: hello@example.com
+- **LinkedIn**: [Septaro Travian Gadha](https://www.linkedin.com/in/septarotraviangadha/)
+- **GitHub**: [travian22](https://github.com/travian22)
 
 ---
 
-**Note**: Website ini dibuat sebagai template portfolio. Silakan customize sesuai kebutuhan Anda. 
+**Note**: Portfolio ini dibuat untuk menampilkan karya dan pengalaman dalam bidang jaringan komputer dan pengembangan web. Silakan customize sesuai kebutuhan Anda. 
