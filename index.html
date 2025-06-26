@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Travian</title>
+    <meta name="description" content="Portfolio profesional dengan pengalaman dalam pengembangan web, mobile, dan teknologi modern">
+    <meta name="keywords" content="portfolio, developer, web development, mobile development, programming">
+    <meta name="author" content="Professional Developer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favico.ico">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">Portfolio Travian</a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Halo, saya</span>
+                        <span class="title-line highlight">Septaro</span>
+                        <span class="title-line">Travian Gadha</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Saya adalah seorang mahasiswa yang berfokus pada jaringan komputer dengan pengalaman dalam berbagai teknologi jaringan.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">Proyek Selesai</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="20">0</span>
+                            <span class="stat-label">Klien Puas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Hubungi Saya
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i>
+                            Lihat Proyek
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/travian22" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/septarotraviangadha/" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/trvngdh/" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll untuk melihat lebih lanjut</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Mengenal lebih dekat tentang pengalaman dan keahlian saya</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>Pengalaman & Keahlian</h3>
+                    <p>
+                        Saya adalah seorang developer yang passionate dalam menciptakan solusi digital yang inovatif dan user-friendly. 
+                        Dengan pengalaman lebih dari 5 tahun dalam pengembangan web dan mobile, saya telah mengerjakan berbagai proyek 
+                        dari startup hingga enterprise.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Pengembangan Cepat</h4>
+                                <p>Menggunakan teknologi modern untuk pengembangan yang efisien dan berkualitas tinggi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Responsive Design</h4>
+                                <p>Membuat aplikasi yang optimal di semua perangkat dan ukuran layar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Keamanan & Performa</h4>
+                                <p>Menerapkan best practices untuk keamanan dan optimasi performa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills">
+                    <h3>Keahlian Teknis</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Web Development</h4>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-html5 icon-html5" style="color: #E44D26 !important;"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="95"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-css3-alt icon-css3" style="color: #1572B6 !important;"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-js icon-js" style="color: #F7DF1E !important; text-shadow: 0 0 2px #000;"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="50"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-php icon-php" style="color: #777BB4 !important;"></i>
+                                        <span>PHP</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="60"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fas fa-database icon-db" style="color: #4DB33D !important;"></i>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Network Engineering</h4>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fas fa-network-wired icon-network" style="color: #00A0E9 !important;"></i>
+                                        <span>Network Configuration</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="70"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fas fa-tools icon-tools" style="color: #28A745 !important;"></i>
+                                        <span>Mikrotik</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fas fa-desktop icon-desktop" style="color: #17A2B8 !important;"></i>
+                                        <span>GNS3</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pengalaman Kerja</h2>
+                <p class="section-subtitle">Perjalanan karir dan pengalaman profesional saya</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Full Stack Developer</h3>
+                            <span class="timeline-date">2022 - Sekarang</span>
+                        </div>
+                        <div class="timeline-company">Tech Company Indonesia</div>
+                        <p class="timeline-description">
+                            Memimpin pengembangan aplikasi web dan mobile untuk klien enterprise. 
+                            Menggunakan React, Node.js, dan cloud technologies untuk menciptakan solusi yang scalable.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="timeline-date">2020 - 2022</span>
+                        </div>
+                        <div class="timeline-company">Digital Agency Jakarta</div>
+                        <p class="timeline-description">
+                            Mengembangkan user interface yang menarik dan responsive untuk berbagai proyek web. 
+                            Berkolaborasi dengan tim design dan backend untuk menciptakan pengalaman pengguna yang optimal.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Developer</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                        </div>
+                        <div class="timeline-company">Startup Bandung</div>
+                        <p class="timeline-description">
+                            Mulai karir sebagai junior developer dengan fokus pada pengembangan web menggunakan PHP dan MySQL. 
+                            Belajar best practices dan teknologi modern dalam pengembangan software.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyek Terbaru</h2>
+                <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+            </div>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/topologi.png" alt="Topologi Jaringan Warnet">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/travian22/topology_warnet" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/travian22/topology_warnet" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Topologi Jaringan Warnet</h3>
+                        <p>Topologi jaringan warnet dengan 3 switch dan 1 router.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Winbox</span>
+                            <span class="tech-tag">GNS3</span>
+                            <span class="tech-tag">Mikrotik</span>
+                            <span class="tech-tag">VMware Workstation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projek_admin.png" alt="Projek Admin">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/travian22/projek_admin" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/travian22/projek_admin" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Admin Dashboard</h3>
+                        <p>Admin Dashboard dengan fitur CRUD dan autentikasi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/batik_alam.png" alt="Batik Alam">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/travian22/batik_alam" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://travian22.github.io/batik_alam/" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Batik Alam</h3>
+                        <p>Website batik alam dengan desain modern, responsive, dan optimasi SEO untuk showcase karya.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects.html" class="btn btn-secondary">
+                <i class="fas fa-eye"></i>
+                Lihat Semua Proyek
+            </a> 
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="section-subtitle">Mari diskusikan proyek Anda</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telepon</h4>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Lokasi</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Jam Kerja</h4>
+                            <p>Senin - Jumat: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Nama Lengkap</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subjek</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">Pesan</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Portfolio</h3>
+                    <p>
+                        Developer profesional yang berdedikasi untuk menciptakan solusi digital yang inovatif dan berkualitas tinggi.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#experience">Pengalaman</a></li>
+                        <li><a href="#projects">Proyek</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
